@@ -4,8 +4,8 @@ import type { JsonRpcEngine, JsonRpcRequest } from 'json-rpc-engine';
 /**
  * An Ethereum provider.
  *
- * This provider loosly follows conventions that pre-date EIP-1193. It
- * is not compliant with any Ethereum provider standard.
+ * This provider loosely follows conventions that pre-date EIP-1193.
+ * It is not compliant with any Ethereum provider standard.
  */
 export class SafeEventEmitterProvider extends SafeEventEmitter {
   #engine: JsonRpcEngine;
