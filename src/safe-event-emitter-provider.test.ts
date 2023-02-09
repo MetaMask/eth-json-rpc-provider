@@ -5,7 +5,7 @@ import { SafeEventEmitterProvider } from './safe-event-emitter-provider';
 
 describe('SafeEventEmitterProvider', () => {
   describe('constructor', () => {
-    it('emit engine notifications from provider', async () => {
+    it('listens for notifications from provider, emitting them as "data"', async () => {
       const engine = new JsonRpcEngine();
       const provider = new SafeEventEmitterProvider({ engine });
       const notificationListener = jest.fn();
@@ -19,7 +19,7 @@ describe('SafeEventEmitterProvider', () => {
       expect(notificationListener).toHaveBeenCalledWith(null, 'test');
     });
 
-    it('do not throw if engine does not support events', () => {
+    it('does not throw if engine does not support events', () => {
       const engine = new JsonRpcEngine() as any;
       delete engine.on;
 
@@ -28,7 +28,7 @@ describe('SafeEventEmitterProvider', () => {
   });
 
   describe('sendAsync', () => {
-    it('handle a successful request', async () => {
+    it('handles a successful request', async () => {
       const engine = new JsonRpcEngine();
       engine.push((_req, res, _next, end) => {
         res.result = 42;
@@ -47,7 +47,7 @@ describe('SafeEventEmitterProvider', () => {
       expect(response.result).toBe(42);
     });
 
-    it('handle a failed request', async () => {
+    it('handles a failed request', async () => {
       const engine = new JsonRpcEngine();
       engine.push((_req, _res, _next, _end) => {
         throw new Error('Test error');
@@ -67,7 +67,7 @@ describe('SafeEventEmitterProvider', () => {
   });
 
   describe('send', () => {
-    it('throw if a callback is not provided', () => {
+    it('throws if a callback is not provided', () => {
       const engine = new JsonRpcEngine();
       const provider = new SafeEventEmitterProvider({ engine });
       const exampleRequest = {
@@ -79,7 +79,7 @@ describe('SafeEventEmitterProvider', () => {
       expect(() => (provider.send as any)(exampleRequest)).toThrow('');
     });
 
-    it('handle a successful request', async () => {
+    it('handles a successful request', async () => {
       const engine = new JsonRpcEngine();
       engine.push((_req, res, _next, end) => {
         res.result = 42;
@@ -98,7 +98,7 @@ describe('SafeEventEmitterProvider', () => {
       expect(response.result).toBe(42);
     });
 
-    it('handle a failed request', async () => {
+    it('handles a failed request', async () => {
       const engine = new JsonRpcEngine();
       engine.push((_req, _res, _next, _end) => {
         throw new Error('Test error');
