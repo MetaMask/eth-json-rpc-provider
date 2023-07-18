@@ -1,10 +1,10 @@
 import SafeEventEmitter from '@metamask/safe-event-emitter';
 import type { JsonRpcEngine, JsonRpcRequest } from 'json-rpc-engine';
 
-import { MinimalEthereumProvider } from './minimal-ethereum-provider';
+import { JsonRpcProvider } from './json-rpc-provider';
 
 /**
- * SafeEventEmitterProvider implements the Ethereum provider interface by using
+ * SafeEventEmitterProvider implements the JSON-RPC provider interface by using
  * a [JSON-RPC engine](https://github.com/MetaMask/json-rpc-engine) to make
  * requests.
  *
@@ -14,7 +14,7 @@ import { MinimalEthereumProvider } from './minimal-ethereum-provider';
  */
 export class SafeEventEmitterProvider
   extends SafeEventEmitter
-  implements MinimalEthereumProvider
+  implements JsonRpcProvider
 {
   #engine: JsonRpcEngine;
 

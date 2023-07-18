@@ -1,13 +1,13 @@
 import { JsonRpcRequest } from 'json-rpc-engine';
 
 /**
- * The interface for the Ethereum provider.
+ * The interface for the JSON-RPC provider.
  *
  * This provider follows conventions that pre-date
  * [EIP-1193](https://eips.ethereum.org/EIPS/eip-1193). It is not compliant with
  * any Ethereum provider standard.
  */
-export type MinimalEthereumProvider = {
+export type JsonRpcProvider = {
   /**
    * Send a provider request asynchronously.
    *
