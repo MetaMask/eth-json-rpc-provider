@@ -7,8 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.0.1]
-### Uncategorized
-- deps: Switch from `json-rpc-engine` to `@metamask/json-rpc-engine` ([#16](https://github.com/MetaMask/eth-json-rpc-provider/pull/16))
+### Changed
+- Updated dependencies: ([#16](https://github.com/MetaMask/eth-json-rpc-provider/pull/16))
+  - Switched json-rpc-engine@^6.1.0 -> @metamask/json-rpc-engine@^7.0.0
+  - Bumped @metamask/safe-event-emitter@^2.0.0->^3.0.0
+  - Added @metamask/utils@5.0.1
 
 ## [1.0.0]
 ### Added
