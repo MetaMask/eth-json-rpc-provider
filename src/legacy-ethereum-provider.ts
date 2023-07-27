@@ -1,4 +1,4 @@
-import { JsonRpcRequest } from 'json-rpc-engine';
+import { JsonRpcRequest } from '@metamask/json-rpc-engine';
 
 /**
  * The interface for a legacy Ethereum provider.
