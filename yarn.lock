@@ -951,7 +951,7 @@ __metadata:
     "@metamask/eslint-config-jest": ^11.0.0
     "@metamask/eslint-config-nodejs": ^11.0.1
     "@metamask/eslint-config-typescript": ^11.0.0
-    "@metamask/json-rpc-engine": ^7.0.0
+    "@metamask/json-rpc-engine": ^7.1.0
     "@metamask/safe-event-emitter": ^3.0.0
     "@metamask/utils": ^8.1.0
     "@types/jest": ^28.1.6
@@ -978,31 +978,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@metamask/json-rpc-engine@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "@metamask/json-rpc-engine@npm:7.0.0"
+"@metamask/json-rpc-engine@npm:^7.1.0":
+  version: 7.1.1
+  resolution: "@metamask/json-rpc-engine@npm:7.1.1"
   dependencies:
-    "@metamask/rpc-errors": ^5.0.0
-    "@metamask/safe-event-emitter": ^2.0.0
-    "@metamask/utils": ^5.0.1
-  checksum: d22347ee4597bc72cdc34e65a27872ed8e77de188c5b95fed9133c25289cd4abd7aafa72e3e326d8a7449a857c275ed6435642727c30c51319f5d97a579c5f49
+    "@metamask/rpc-errors": ^6.0.0
+    "@metamask/safe-event-emitter": ^3.0.0
+    "@metamask/utils": ^8.1.0
+  checksum: 9dddd9142965ccd86313cda5bf13f15bf99c6c14631f93aab78de353317d548a334b5b125cdc134edd7d54e2f2e4961a0bdcd24fba997b2913083955df8fefa1
   languageName: node
   linkType: hard
 
-"@metamask/rpc-errors@npm:^5.0.0":
-  version: 5.1.1
-  resolution: "@metamask/rpc-errors@npm:5.1.1"
+"@metamask/rpc-errors@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@metamask/rpc-errors@npm:6.0.0"
   dependencies:
-    "@metamask/utils": ^5.0.0
+    "@metamask/utils": ^8.0.0
     fast-safe-stringify: ^2.0.6
-  checksum: ccd1b24da66af3ae63960b79c04b86efb8b96acb89ca6f7e0bbfe636d23ba5cddeba533c0692eafb87c44ec6f840085372d0f21b39e05df9a80700ff61538a30
-  languageName: node
-  linkType: hard
-
-"@metamask/safe-event-emitter@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@metamask/safe-event-emitter@npm:2.0.0"
-  checksum: 8b717ac5d53df0027c05509f03d0534700b5898dd1c3a53fb2dc4c0499ca5971b14aae67f522d09eb9f509e77f50afa95fdb3eda1afbff8b071c18a3d2905e93
+  checksum: 7e1ee1a98972266af4a34f0bbc842cdc11dc565056f0b8fbc93aa95663a7027eab8ff1fecbe3e09c38a1dc199f8219a6c69b2237015b2fdb8de0e5b35027c3f8
   languageName: node
   linkType: hard
 
@@ -1013,20 +1006,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/utils@npm:^5.0.0, @metamask/utils@npm:^5.0.1":
-  version: 5.0.2
-  resolution: "@metamask/utils@npm:5.0.2"
-  dependencies:
-    "@ethereumjs/tx": ^4.1.2
-    "@types/debug": ^4.1.7
-    debug: ^4.3.4
-    semver: ^7.3.8
-    superstruct: ^1.0.3
-  checksum: eca82e42911b2840deb4f32f0f215c5ffd14d22d68afbbe92d3180e920e509e310777b15eab29def3448f3535b66596ceb4c23666ec846adacc8e1bb093ff882
-  languageName: node
-  linkType: hard
-
-"@metamask/utils@npm:^8.1.0":
+"@metamask/utils@npm:^8.0.0, @metamask/utils@npm:^8.1.0":
   version: 8.1.0
   resolution: "@metamask/utils@npm:8.1.0"
   dependencies:
