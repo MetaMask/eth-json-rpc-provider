@@ -8,9 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.1.0]
 ### Changed
-- Updated dependencies: ([#25](https://github.com/MetaMask/eth-json-rpc-provider/pull/25))
-  - Bumped @metamask/json-rpc-engine@^7.0.0->^7.1.0
-  - Bumped @metamask/utils@^5.0.1->^8.1.0
+- Bump `@metamask/json-rpc-engine` from `^7.0.0` to `^7.1.0` ([#25](https://github.com/MetaMask/eth-json-rpc-provider/pull/25))
+- Bump `@metamask/utils` from `^5.0.1` to `^8.1.0` ([#25](https://github.com/MetaMask/eth-json-rpc-provider/pull/25))
 
 ## [2.0.0]
 ### Fixed
