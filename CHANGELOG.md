@@ -7,8 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [2.2.0]
-### Uncategorized
+### Changed
 - Align ESLint, Prettier packages and configs with core monorepo ahead of migration ([#28](https://github.com/MetaMask/eth-json-rpc-provider/pull/28))
+  - Bump `@lavamoat/allow-scripts` from `^2.0.3` to `^2.3.1`.
+  - Bump `@metamask/eslint-config` from `^11.0.1` to `^12.2.0`.
+  - Bump `@metamask/eslint-config-jest` from `^11.0.0` to `^12.0.0`.
+  - Bump `@metamask/eslint-config-nodejs` from `^11.0.1` to `^12.0.0`.
+  - Bump `@metamask/eslint-config-typescript` from `^11.0.0` to `^12.0.0`.
+  - Downgrade `@types/node` from `^16.18.39` to `^16.18.24`.
+  - Downgrade `@typescript-eslint/eslint-plugin` from `^5.43.0` to `^5.30.7`.
+  - Downgrade `@typescript-eslint/parser` from `^5.43.0` to `^5.30.7`.
+  - Bump `eslint` from `^8.27.0` to `^8.44.0`.
+  - Downgrade `eslint-plugin-jsdoc` from `^39.6.2` to `^39.3.3`.
+  - Removed `eslint-plugin-node@^11.1.0`.
+  - Added `eslint-plugin-n@^15.7.0`.
+  - Added `eslint-plugin-promise@^6.1.1`.
+  - Downgraded `prettier-plugin-packagejson` from `^2.3.0` to `^2.2.17`.
+  - Bump `ts-node` from `^10.7.0` to `^10.9.1`.
+  - Upgrade `packageManager` from `yarn@3.2.1` to `yarn@3.3.0`.
 
 ## [2.1.0]
 ### Changed
