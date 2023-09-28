@@ -1,6 +1,6 @@
 {
   "name": "@metamask/eth-json-rpc-provider",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Create an Ethereum provider using a JSON-RPC engine or middleware",
   "repository": {
     "type": "git",
@@ -26,9 +26,9 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@metamask/json-rpc-engine": "^7.0.0",
+    "@metamask/json-rpc-engine": "^7.1.0",
     "@metamask/safe-event-emitter": "^3.0.0",
-    "@metamask/utils": "^5.0.1"
+    "@metamask/utils": "^8.1.0"
   },
   "devDependencies": {
     "@lavamoat/allow-scripts": "^2.0.3",
