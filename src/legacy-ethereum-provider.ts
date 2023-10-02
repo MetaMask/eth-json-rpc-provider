@@ -1,4 +1,4 @@
-import { JsonRpcRequest } from '@metamask/utils';
+import type { JsonRpcRequest } from '@metamask/utils';
 
 /**
  * The interface for a legacy Ethereum provider.
@@ -15,7 +15,7 @@ export type LegacyEthereumProvider = {
    * @param callback - A function that is called upon the success or failure of the request.
    */
   sendAsync(
-    req: JsonRpcRequest<unknown>,
+    req: JsonRpcRequest,
     callback: (error: unknown, providerRes?: any) => void,
   ): void;
 
@@ -30,7 +30,7 @@ export type LegacyEthereumProvider = {
    * @param callback - A function that is called upon the success or failure of the request.
    */
   send(
-    req: JsonRpcRequest<unknown>,
+    req: JsonRpcRequest,
     callback: (error: unknown, providerRes?: any) => void,
   ): void;
 };

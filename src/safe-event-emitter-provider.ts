@@ -2,7 +2,7 @@ import type { JsonRpcEngine } from '@metamask/json-rpc-engine';
 import SafeEventEmitter from '@metamask/safe-event-emitter';
 import type { JsonRpcRequest } from '@metamask/utils';
 
-import { JsonRpcProvider } from './json-rpc-provider';
+import type { LegacyEthereumProvider } from './legacy-ethereum-provider';
 
 /**
  * SafeEventEmitterProvider implements the JSON-RPC provider interface by using
@@ -15,7 +15,7 @@ import { JsonRpcProvider } from './json-rpc-provider';
  */
 export class SafeEventEmitterProvider
   extends SafeEventEmitter
-  implements JsonRpcProvider
+  implements LegacyEthereumProvider
 {
   #engine: JsonRpcEngine;
 
