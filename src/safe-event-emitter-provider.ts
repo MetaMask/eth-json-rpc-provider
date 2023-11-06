@@ -2,13 +2,21 @@ import type { JsonRpcEngine } from '@metamask/json-rpc-engine';
 import SafeEventEmitter from '@metamask/safe-event-emitter';
 import type { JsonRpcRequest } from '@metamask/utils';
 
+import type { LegacyEthereumProvider } from './legacy-ethereum-provider';
+
 /**
- * An Ethereum provider.
+ * SafeEventEmitterProvider implements the JSON-RPC provider interface by using
+ * a [JSON-RPC engine](https://github.com/MetaMask/json-rpc-engine) to make
+ * requests.
  *
- * This provider loosely follows conventions that pre-date EIP-1193.
- * It is not compliant with any Ethereum provider standard.
+ * This provider follows conventions that pre-date
+ * [EIP-1193](https://eips.ethereum.org/EIPS/eip-1193). It is not compliant with
+ * any Ethereum provider standard.
  */
-export class SafeEventEmitterProvider extends SafeEventEmitter {
+export class SafeEventEmitterProvider
+  extends SafeEventEmitter
+  implements LegacyEthereumProvider
+{
   #engine: JsonRpcEngine;
 
   /**
