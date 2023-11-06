@@ -1,6 +1,6 @@
 # eth-json-rpc-provider
 
-<table><tr><td><p align="center"><b>⚠️ PLEASE READ ⚠️</b></p><p align="center">This package is currently being migrated to our <a href="https://github.com/MetaMask/core"><code>core</code></a> monorepo. Please do not make any commits to this repository while this migration is taking place, as they will not be transferred over.</p></td></tr></table>
+<table><tr><td><p align="center"><b>⚠️ PLEASE READ ⚠️</b></p><p align="center">This package has been migrated to our <a href="https://github.com/MetaMask/core"><code>core</code></a> monorepo, and this repository has been archived. Please note that all future development will take place in the <a href="https://github.com/MetaMask/core"><code>core</code></a> repository.</p></td></tr></table>
 
 This package provides functions for creating an Ethereum provider from a [JSON-RPC engine](https://github.com/MetaMask/json-rpc-engine), or from middleware compatible with JSON-RPC engine.
 
